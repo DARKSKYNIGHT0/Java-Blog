@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  javablog:
+    image: javablog
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5501:5501
